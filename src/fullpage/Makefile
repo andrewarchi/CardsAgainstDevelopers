@@ -7,24 +7,24 @@ PDFs: letter a4
 
 letter:
 	mkdir -p ${DESTINATION_PDFS}
-	make letterblackblack
+	$(MAKE) letterblackblack
 	mv black.pdf ${DESTINATION_PDFS}/${BLACK}-letter-black.pdf
-	make letterblackgray
+	$(MAKE) letterblackgray
 	mv black.pdf ${DESTINATION_PDFS}/${BLACK}-letter-gray.pdf
-	make letterblackwhite
+	$(MAKE) letterblackwhite
 	mv black.pdf ${DESTINATION_PDFS}/${BLACK}-letter-white.pdf
-	make letterwhitewhite
+	$(MAKE) letterwhitewhite
 	mv white.pdf ${DESTINATION_PDFS}/${WHITE}-letter.pdf
 
 a4:
 	mkdir -p ${DESTINATION_PDFS}
-	make a4blackblack
+	$(MAKE) a4blackblack
 	mv black.pdf ${DESTINATION_PDFS}/${BLACK}-a4-black.pdf
-	make a4blackgray
+	$(MAKE) a4blackgray
 	mv black.pdf ${DESTINATION_PDFS}/${BLACK}-a4-gray.pdf
-	make a4blackwhite
+	$(MAKE) a4blackwhite
 	mv black.pdf ${DESTINATION_PDFS}/${BLACK}-a4-white.pdf
-	make a4whitewhite
+	$(MAKE) a4whitewhite
 	mv white.pdf ${DESTINATION_PDFS}/${WHITE}-a4.pdf
 
 clean:

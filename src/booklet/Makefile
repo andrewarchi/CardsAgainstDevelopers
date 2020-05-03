@@ -9,7 +9,7 @@ PDFs:
 	mv booklet-combined.pdf ${DESTINATION_PDFS}/booklet-a4.pdf
 	xelatex "\\def\LETTERPAPER{}\\input{booklet-combined.tex}"
 	mv booklet-combined.pdf ${DESTINATION_PDFS}/booklet-letter.pdf
-	make clean
+	$(MAKE) clean
 
 PNGs:
 	mkdir -p ${DESTINATION_PNGS}
@@ -17,7 +17,7 @@ PNGs:
 	convert -density 300 -geometry 1392x1092 booklet-outside.pdf ${DESTINATION_PNGS}/booklet-outside.png
 	xelatex "\\def\BLEEDAREA{}\\input{booklet-inside.tex}"
 	convert -density 300 -geometry 1392x1092 booklet-inside.pdf ${DESTINATION_PNGS}/booklet-inside.png
-	make clean
+	$(MAKE) clean
 
 clean:
 	rm -f *.aux *.log *.pdf

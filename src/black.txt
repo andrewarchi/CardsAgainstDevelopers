@@ -1,5 +1,5 @@
 "But online I read that \BLANK."
-11 reasons to \BLANK. Nr 5 will surprise you.
+11 reasons to \BLANK. Number 5 will surprise you.
 9gags most upvoted post is \BLANK.
 After successfully selling my company I now \BLANK.
 After ten years working as a developer, I am addicted to \BLANK.
@@ -14,7 +14,6 @@ I am using \BLANK for my monolith.
 I asked my boss for a raise due to \BLANK.
 I declined the pull request because of \BLANK.
 I destroyed \BLANK by \BLANK.
-I don't get laid because of \BLANK.
 I don't get paid because of \BLANK.
 I don't need backups, I have \BLANK.
 I filed a bug on \BLANK.

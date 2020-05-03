@@ -1,12 +1,12 @@
 PDFs:
-	cd src/booklet && make PDFs
-	cd src/fullpage && make PDFs
+	cd src/booklet && $(MAKE) PDFs
+	cd src/fullpage && $(MAKE) PDFs
 
 PNGs:
-	cd src/booklet && make PNGs
-	cd src/individual-cards && make all
+	cd src/booklet && $(MAKE) PNGs
+	cd src/individual-cards && $(MAKE) all
 
 clean:
-	cd src/booklet && make clean
-	cd src/fullpage && make clean
-	cd src/individual-cards && make clean
+	cd src/booklet && $(MAKE) clean
+	cd src/fullpage && $(MAKE) clean
+	cd src/individual-cards && $(MAKE) clean
